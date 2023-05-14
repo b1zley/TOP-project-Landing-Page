@@ -2,6 +2,8 @@ body{
     display:flex;
     flex-direction: column;
     margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: flex-end;
   
 }
 
@@ -19,6 +21,12 @@ body{
     background-color: #1f2937;
     color: white;
 
+    flex-shrink: 0;
+    flex-grow: 0;
+    /* max-height: 100px; */
+    /* min-height: 100px; */
+
+    min-width: 750px;
 }
 .headerLogo{
     font-size: 24px;
@@ -36,10 +44,50 @@ body{
 
 
 /* Deals with the splash below header. */
+
+/* unsure whether to align center */
+/* or align space-between to make header and logo align */
+/* decide later! */
 .thisAwesomeSplash{
+
     border: 1px solid black;
     display: flex;
     justify-content: center;
+    gap: 50px;
+    background-color: #1f2937;
+    padding: 100px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.image{
+    height: 220px;
+    width: auto;
+}
+
+.splashText{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    border: 1px solid black;
+    justify-content: space-between;
+    min-width: 500px;
+    max-height: 220px;
+}
+.splashText .splashHeading{
+    font-size: 48px;
+    color: #F9FAF8;
+}
+
+.splashText p{
+    font-size: 18px;
+    color: #E5E7EB;
+    
+}
+
+.splashText button{
+    width: 80px;
+    background-color: #3882F6;
+    color: white;
 }
 
 
