@@ -124,6 +124,20 @@ a{
 
 }
 
+.item{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.item .img{
+    width: 100px;
+    height: auto;
+
+}
+
 
 /* Deals with inspiring quote below random information */
 .inspiringQuote{
