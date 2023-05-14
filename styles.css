@@ -192,6 +192,7 @@ a {
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
+    text-align: justify;
 }
 
 .inspiringQuote em {
@@ -223,7 +224,9 @@ a {
 .callToAction .container {
     display: flex;
     background-color: #3882F6;
-    padding: 100px;
+    padding: 60px;
+    padding-left: 150px;
+    padding-right: 150px;
     justify-content: space-between;
     align-items: center;
     border-radius: 12px;
@@ -231,8 +234,21 @@ a {
 
 }
 
-.callToAction b {
+.callToAction .container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    /* border: 1px solid black; */
+    padding: 0px;
+    line-height: 0px;
+    
+    
+}
+
+.callToAction .title {
     color: white;
+    font-weight: bold;
     font-size: 22px;
 }
 
