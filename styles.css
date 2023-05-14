@@ -1,14 +1,14 @@
-body{
-    display:flex;
+body {
+    display: flex;
     flex-direction: column;
     margin: 0px;
     font-family: 'Courier New', Courier, monospace;
     justify-content: flex-end;
-  
+
 }
 
 /* Deals with the header. */
-.header{
+.header {
     display: flex;
     /* border: 1px solid black; */
     justify-content: center;
@@ -30,7 +30,8 @@ body{
 
     gap: 555px;
 }
-.headerLogo{
+
+.headerLogo {
     font-size: 24px;
     color: #F9FAF8;
     flex-shrink: 0;
@@ -38,16 +39,17 @@ body{
     white-space: nowrap;
 }
 
-.headerLinks{
+.headerLinks {
     list-style-type: none;
     display: flex;
     gap: 35px;
     font-size: 14px;
     color: #E5E7EB;
     white-space: nowrap;
-    
+
 }
-a{
+
+a {
     text-decoration: none;
     color: #E5E7EB;
 }
@@ -59,7 +61,7 @@ a{
 /* unsure whether to align center */
 /* or align space-between to make header and logo align */
 /* decide later! */
-.thisAwesomeSplash{
+.thisAwesomeSplash {
 
     /* border: 1px solid black; */
     display: flex;
@@ -70,13 +72,14 @@ a{
     padding-top: 140px;
     padding-bottom: 140px;
 }
-.image{
+
+.image {
     height: 220px;
     width: 584px;
     flex: 0 0 auto;
 }
 
-.splashText{
+.splashText {
     display: flex;
     flex-direction: column;
     max-width: 584px;
@@ -85,19 +88,21 @@ a{
     min-width: 584px;
     max-height: 220px;
 }
-.splashText .splashHeading{
+
+.splashText .splashHeading {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 800;
 }
 
-.splashText p{
+.splashText p {
     font-size: 18px;
     color: #E5E7EB;
-    
+
 }
 
-.splashText button{
+.splashText button,
+.callToAction button {
     width: 140px;
     background-color: #3882F6;
     color: white;
@@ -107,12 +112,13 @@ a{
     padding-bottom: 5px;
     font-size: 18px;
     font-weight: 800;
+    border: 2px solid white;
 }
 
 
 
 /* Deals with the random information below splash */
-.someRandomInfo{
+.someRandomInfo {
     /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
@@ -120,27 +126,30 @@ a{
     padding: 60px;
     padding-bottom: 90px;
 }
-.someRandomInfoItems{
+
+.someRandomInfoItems {
     display: flex;
     /* border: 1px solid black; */
     gap: 60px;
 
 }
+
 /* Some random information heading */
-.someRandomInfo p{
+.someRandomInfo p {
     color: #1f2937;
     font-size: 36px;
     font-weight: 800;
 }
+
 /* some random information subtext */
-.someRandomInfoItems .item p{
+.someRandomInfoItems .item p {
     color: black;
     font-size: 18px;
-    font-weight:100;
+    font-weight: 100;
     text-align: center;
 }
 
-.item{
+.item {
     display: flex;
     flex-direction: column;
     /* border: 1px solid black; */
@@ -154,10 +163,10 @@ a{
 
 }
 
-.item .img{
+.item .img {
     width: 200px;
     height: auto;
-    border:8px solid #3882F6;
+    border: 8px solid #3882F6;
     border-radius: 10px;
 
 }
@@ -165,35 +174,36 @@ a{
 
 
 /* Deals with inspiring quote below random information */
-.inspiringQuote{
+.inspiringQuote {
     /* border: 1px solid black; */
     display: flex;
 
-    
+
     justify-content: center;
     align-items: center;
 
 
     background-color: #E5E7EB;
     padding: 90px;
-    
+
 }
 
-.inspiringQuote .container{
+.inspiringQuote .container {
     display: flex;
     flex-direction: column;
     flex-shrink: 1;
 }
-.inspiringQuote em{
+
+.inspiringQuote em {
     max-width: 1200px;
     /* border: 1px solid black; */
     font-size: 36px;
     color: #1f2937;
-    font-weight:lighter;
-    
+    font-weight: lighter;
+
 }
 
-.inspiringQuote b{
+.inspiringQuote b {
     /* border: 1px solid black; */
     align-self: flex-end;
     font-size: 36px;
@@ -203,22 +213,54 @@ a{
 
 
 /* deals with call to action below random information */
-.callToAction{
+.callToAction {
     border: 1px solid black;
     display: flex;
     justify-content: center;
+    padding: 80px;
+}
+
+.callToAction .container {
+    display: flex;
+    background-color: #3882F6;
+    padding: 100px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    gap: 200px;
+
+}
+
+.callToAction b {
+    color: white;
+    font-size: 22px;
+}
+
+.callToAction p {
+    color: white;
+    font-size: 18px;
 }
 
 
-.footer{
-    border: 1px solid black;
+/* deals with footer */
+.footer {
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
-    
+
+}
+
+.callToAction button {
+    border: 2px solid white;
+    white-space: nowrap;
+    flex-shrink: 0;
+    flex-basis: auto;
 }
 
 
 
-
-
-
+.callToAction button:active,
+button:active {
+    background-color: hsl(224, 72%, 24%);
+    border-color: #eee;
+}
