@@ -10,10 +10,10 @@ body{
 /* Deals with the header. */
 .header{
     display: flex;
-    border: 1px solid black;
-    justify-content: space-between;
+    /* border: 1px solid black; */
+    justify-content: center;
     align-items: center;
-    padding: 100px;
+    /* padding: 300px; */
 
     padding-top: 10px;
     padding-bottom: 10px;
@@ -27,17 +27,28 @@ body{
     /* min-height: 100px; */
 
     min-width: 750px;
+
+    gap: 433px;
 }
 .headerLogo{
     font-size: 24px;
     color: #F9FAF8;
+    flex-shrink: 0;
+    /* border: 1px solid black; */
+    white-space: nowrap;
 }
 
 .headerLinks{
     list-style-type: none;
     display: flex;
-    gap: 12px;
+    gap: 35px;
     font-size: 18px;
+    color: #E5E7EB;
+    white-space: nowrap;
+    
+}
+a{
+    text-decoration: none;
     color: #E5E7EB;
 }
 
@@ -50,32 +61,34 @@ body{
 /* decide later! */
 .thisAwesomeSplash{
 
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     gap: 50px;
     background-color: #1f2937;
-    padding: 100px;
+    padding: 300px;
     padding-top: 80px;
     padding-bottom: 80px;
 }
 .image{
     height: 220px;
-    width: auto;
+    width: 584px;
+    flex: 0 0 auto;
 }
 
 .splashText{
     display: flex;
     flex-direction: column;
-    max-width: 500px;
-    border: 1px solid black;
+    max-width: 584px;
+    /* border: 1px solid black; */
     justify-content: space-between;
-    min-width: 500px;
+    min-width: 584px;
     max-height: 220px;
 }
 .splashText .splashHeading{
     font-size: 48px;
     color: #F9FAF8;
+    font-weight: 800;
 }
 
 .splashText p{
@@ -85,9 +98,15 @@ body{
 }
 
 .splashText button{
-    width: 80px;
+    width: 140px;
     background-color: #3882F6;
     color: white;
+    border-radius: 6px;
+    padding: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 18px;
+    font-weight: 800;
 }
 
 
