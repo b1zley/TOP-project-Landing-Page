@@ -67,8 +67,8 @@ a{
     gap: 50px;
     background-color: #1f2937;
     padding: 300px;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 140px;
+    padding-bottom: 140px;
 }
 .image{
     height: 220px;
@@ -113,30 +113,54 @@ a{
 
 /* Deals with the random information below splash */
 .someRandomInfo{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 60px;
 }
 .someRandomInfoItems{
     display: flex;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    gap: 60px;
 
+}
+/* Some random information heading */
+.someRandomInfo p{
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 800;
+}
+/* some random information subtext */
+.someRandomInfoItems .item p{
+    color: black;
+    font-size: 18px;
+    font-weight:100;
+    text-align: center;
 }
 
 .item{
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     justify-content: center;
     align-items: center;
+    width: 216px;
+    height: 332px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+
 }
 
 .item .img{
-    width: 100px;
+    width: 200px;
     height: auto;
+    border:8px solid #3882F6;
+    border-radius: 10px;
 
 }
+
 
 
 /* Deals with inspiring quote below random information */
