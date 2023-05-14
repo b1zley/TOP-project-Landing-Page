@@ -28,7 +28,7 @@ body{
 
     min-width: 750px;
 
-    gap: 433px;
+    gap: 555px;
 }
 .headerLogo{
     font-size: 24px;
@@ -42,7 +42,7 @@ body{
     list-style-type: none;
     display: flex;
     gap: 35px;
-    font-size: 18px;
+    font-size: 14px;
     color: #E5E7EB;
     white-space: nowrap;
     
